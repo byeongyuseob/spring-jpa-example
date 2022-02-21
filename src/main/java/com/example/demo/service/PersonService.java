@@ -6,12 +6,15 @@ import com.example.demo.dto.PersonCreationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.EntityNotFoundException;
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Validated
 @RequiredArgsConstructor
 public class PersonService {
     private final PersonRepository personRepository;
@@ -28,7 +31,7 @@ public class PersonService {
         return person.get();
     }
 
-    public Person createPerson (PersonCreationRequest personCreationRequest) {
+    public Person createPerson (@Valid PersonCreationRequest personCreationRequest) {
         Person person = new Person();
         BeanUtils.copyProperties(personCreationRequest, person);
         return personRepository.save(person);
