@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://db-9jccv.pub-cdb.ntruss.com:3306/covenant
+    username: fly0159
+    password: naver123!@#
+  jpa:
+    hibernate:
+      ddl-auto: none

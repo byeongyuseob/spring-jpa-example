@@ -1,8 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://db-9jccv.pub-cdb.ntruss.com:3306/tableName
-    username: username
-    password: password
-  jpa:
-    hibernate:
-      ddl-auto: create
