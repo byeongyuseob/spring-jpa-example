@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 
-@Data
 @Builder
 public class PersonCreationRequest {
 
@@ -14,4 +13,12 @@ public class PersonCreationRequest {
 
     @NotBlank(message = "Last name must be provided")
     private String lastName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
 }
