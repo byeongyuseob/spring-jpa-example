@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://db-9jccv.pub-cdb.ntruss.com:3306/prod
+    username: username-prod
+    password: password-prod
+  jpa:
+    hibernate:
+      ddl-auto: none
