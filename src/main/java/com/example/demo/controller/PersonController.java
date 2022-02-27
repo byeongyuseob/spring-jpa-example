@@ -15,11 +15,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PersonController {
     private final PersonService personService;
-    private Long id;
 
     @GetMapping("/people")
     public ResponseEntity<List<Person>> getPeople() {
-        return ResponseEntity.ok( personService.getPeople());
+        return ResponseEntity.ok(personService.getPeople());
     }
 
     @GetMapping("/person/{id}")
