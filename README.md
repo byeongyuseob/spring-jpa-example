@@ -32,10 +32,11 @@ src
 
 ```bash
 Profiles
-resources                                              [Profiles seperated with dev, local, production]  
+resources                                              [Profiles seperated with dev, local, test and production]  
  ├── application-dev.yml
  ├── application-local.yml
  ├── application-prod.yml
+ ├── application-test.yml
  └── application.yml
 ```
 
