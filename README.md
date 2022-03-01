@@ -47,7 +47,7 @@ test
     └── com
         └── example
             └── demo
-                ├── PersonControllerTest.java.         [Contoller test -- JUnit5]
+                ├── PersonControllerTest.java.         [Contoller test -- Mockmvc]
                 ├── PersonRepositoryTest.java          [Repository test -- JUnit5]
                 └── PersonServiceTest.java             [Service test -- JUnit5]
 ```
